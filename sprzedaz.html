@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="strona.css">
+    <title>Kupno</title>
+</head>
+<body>
+
+
+    
+    <header id="pierwsza_sekcja">
+        <a href="index.html" class="p1">Strona Główna</a>
+        <a href="sprzedaz.html" class="p1">Kup samochód</a>
+        <a href="dziekujeny.html" class="p1">Sprzedaj samochód</a>
+         <a href="kup.html" class="p1">Dostępne</a>
+  
+          <a href="#footer_sekcja" class="p1">Kontakt</a>
+      </header>
+    <div id="tylny">
+    <div class="content">
+
+        <section id="formularz">
+            <form action="#" method="post" autocomplete="off"> 
+
+                <h1>Powiedz nam, czego szukasz</h1>
+
+
+                <div class="row">
+                    <label for="name">imie i nazwisko</label>
+                    <input id="name" type="text">
+
+                </div>
+                <div class="row">
+                    <label for="gmail">gmail</label>
+                    <input id="gmail" type="email"  >
+                </div>
+                <div class="row">
+                    <label for="telefon">numer telefonu</label>
+                    <input id="telefon" type="tel" pattern="\d{9}" placeholder="XXX-XXX-XXX" >
+                </div>
+
+                <div class="row">
+                    <label for="model">model samochodu</label>
+                    <input id="model" type="text" list="modele" placeholder="Wybierz jaki model Cię interesuje">
+                    <datalist id="modele">
+                        <option value="BMW"></option>
+                        <option value="Skoda"></option>
+                        <option value="Toyota"></option>
+                        <option value="Mercedes"></option>
+                    </datalist>
+                </div>
+
+           
+                <div class="row">
+                    <label for="cena">Cena</label >
+                    <input id="cena" type="text" list="cena-lista" placeholder="Wybierz lub wpisz zakres">
+                    <datalist id="cena-lista">
+                        <option value="1 000-10 000"></option>
+                        <option value="10 000-20 000"></option>
+                        <option value="20 000-30 000"></option>
+                        <option value="30 000-40 000"></option>
+                        <option value="40 000-50 000"></option>
+                        <option value="50 000-100 000"></option>
+                    </datalist>
+                </div>
+                <div class="row">
+                    <label for="description" style="margin-top: 7%;">Opisz nam jakiego samochodu szukasz</label>
+                    <textarea id="description" maxlength="500" rows="7" placeholder="Jaki typ nadwozia Cię interesuje? Jaki rodzaj paliwa preferujesz?Jakie są Twoje główne potrzeby lub zastosowania auta?Czy preferujesz samochód z manualną czy automatyczną skrzynią biegów?Jakie wyposażenie jest dla Ciebie istotne?Jaki maksymalny przebieg akceptujesz (dla auta używanego)"></textarea>
+                </div>
+                <div class="row">
+                 <input type="submit" class="przycisk">
+
+                </div>
+            
+            </form>
+
+        </section>
+    </div>
+
+</div>
+<footer id="footer_sekcja">
+    <a href="https://www.linkedin.com/feed/" class="p1">LinkedIn</a>
+    <a href="https://www.facebook.com" class="p1">Facebook</a>
+    <a href="https://www.olx.pl" class="p1">OLX</a>
+  </footer>
+
+</body>
+</html>
